@@ -8,12 +8,12 @@ import java.sql.SQLException;
 public class ConexionMYSQL {
     private static String driver = "com.mysql.jdbc.Driver";
     private static String database = "TraseforTamara";
-    private static String hostname = " 192.168.56.1 ";
+    private static String hostname = " 127.0.0.1 ";
     private static String port = "3306";
     private static String username = "root";
-    private static String password = "123456789";
+    private static String password = "";
     private static String connectionURL;
-    private static Connection conn;
+    public static Connection conn;
     
     public ConexionMYSQL(){
         this.connectionURL = "jdbc:mysql://";
